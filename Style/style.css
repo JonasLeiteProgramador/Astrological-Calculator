@@ -1,0 +1,173 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  background-image: url(../assets/giphy.gif);
+  background-size: cover;
+  font-family: sans-serif;
+}
+
+.calculadora {
+  width: 300px;
+  height: 450px;
+  padding-bottom: 15px;
+  border-radius: 7px;
+  background-image: url("../assets/giphy\ \(2\).gif");
+  box-shadow: 5px 8px 8px -2px rgba(0, 0, 0, 0.61);
+  margin: 0 auto;
+}
+
+.visor {
+  width: auto;
+  height: 80px;
+  border: none;
+  box-sizing: border-box;
+  padding: 10px;
+  font-size: 2rem;
+  background-image: url(//assets/giphy\ \(2\).gif);
+  color: #ffffff;
+  text-align: right;
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+}
+
+#btns {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+button {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: none;
+  outline: none;
+  font-size: 1.5rem;
+  background-color: transparent;
+  color: #fff;
+  margin: 10px;
+  transition: ease-in-out 0.3s;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.61);
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: #737375;
+}
+
+.data-hora {
+  width: 100%;
+  height: 40px;
+  border: none;
+  box-sizing: border-box;
+  padding: 10px;
+  font-size: 1rem;
+  background-color: transparent;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+  text-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.61);
+  
+}
+
+.operadores {
+  background-color: transparent;
+  color: #e9e9e9;
+  opacity: 1;
+}
+
+.animated-button {
+  animation: pulse 0.3s ease-in-out;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+
+@media screen and (max-width: 767px) {
+  .calculadora {
+    width: 250px;
+    height: 380px;
+  }
+
+  button {
+    width: 40px;
+    height: 40px;
+    font-size: 1.2rem;
+    margin: 10px;
+  }
+
+  .visor {
+    width: auto;
+    height: 50px;
+    padding: 5px;
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .calculadora {
+    width: 200px;
+    height: 320px;
+  }
+
+  button {
+    width: 30px;
+    height: 30px;
+    font-size: 1rem;
+    margin: 10px;
+  }
+
+  .visor {
+    width: auto;
+    height: 40px;
+    padding: 5px;
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 219px) {
+  .calculadora {
+    width: 150px;
+    height: auto;
+  }
+
+  button {
+    width: 20px;
+    height: 20px;
+    font-size: 0.8rem;
+    margin: 1px;
+    margin-top: 10px;
+  }
+
+  .visor {
+    width: auto;
+    height: 25px;
+    padding: 5px;
+    font-size: 0.8rem;
+  }
+
+  .data-hora {
+    font-size: 0.4rem;
+  }
+}

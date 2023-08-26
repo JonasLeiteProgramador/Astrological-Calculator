@@ -1,0 +1,255 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; /* Adicionado para evitar problemas de layout */
+  }
+  
+  body {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column; /* Para alinhar os elementos verticalmente */
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    background-image: url(../assets/giphy.gif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: sans-serif;
+
+  }
+  
+  .historico {
+    width: 300px;
+    height: 450px;
+    display: flex;
+    flex-direction: column; /* Para alinhar os elementos verticalmente */
+    align-items: center;
+  }
+  
+  .historico-titulo {
+    color: white;
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 20px;
+  }
+  
+  .historico-lista {
+    list-style: none;
+    color: white;
+    text-align: center;
+    max-height: 60vh; /* Define um limite de altura para a lista */
+    overflow-y: auto; /* Adicione um scroll vertical quando o conteúdo exceder o limite */
+    margin-top: 20px; 
+    
+  }
+  
+  .historico-lista li {
+    font-size: 1rem; /* Ajusta o tamanho da fonte */
+    color: white;
+    text-align: center;
+    padding: 10px; /* Aumentei o espaço interno para melhorar a aparência */
+    border: 1px solid white;
+    background-color: rgba(255, 255, 255, 0.1); /* Usando uma cor ligeiramente transparente para o fundo */
+    border-radius: 5px;
+    margin-bottom: 10px; /* Espaçamento inferior entre os itens */
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.61);
+  }
+  
+  #btn-limpar-historico {
+    background-color:transparent;
+    color:  white;
+    border: 1px solid white;
+    padding: 5px 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 10px; /* Espaçamento superior para separar do título */
+    margin-bottom: 10px;  
+    transition: ease-in 0.3s;
+}
+#btn-limpar-historico:hover {
+    background-color: black;
+}
+#btn-voltar{
+  background-color:transparent;
+  color:  white;
+  border: 1px solid white;
+  padding: 5px 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 10px; /* Espaçamento superior para separar do título */
+  margin-bottom: 10px;  
+  transition: ease-in 0.3s;
+
+}
+#btn-voltar:hover {
+  background-color: black;
+}
+@media screen and (max-width: 767px) {
+  .body{
+    width: auto;
+    height: auto;
+    background-repeat: no-repeat;
+
+  }
+  .historico{
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+   
+  .historico-titulo {
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .historico-lista {
+    list-style: none;
+    color: white;
+    text-align: center;
+    max-height: auto; /* Define um limite de altura para a lista */
+    overflow-y: auto; /* Adiciona um scroll vertical quando o conteúdo exceder o limite */
+    margin-top: 20px; 
+    
+  }
+  
+  .historico-lista li {
+    font-size: auto;  
+    text-align: center;
+    padding: 5px; 
+    width: auto;
+    height: auto;
+   
+  }
+  
+  #btn-limpar-historico {
+    width: auto;
+    height: auto;
+
+}
+#btn-voltar{
+  
+  width: auto;
+  height: auto;
+
+}
+
+ 
+}
+
+@media screen and (max-width: 480px) {
+  .body{
+    width: auto;
+    height: auto;
+    background-repeat: no-repeat;
+
+  }
+  .historico{
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+   
+  .historico-titulo {
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .historico-lista {
+    list-style: none;
+    color: white;
+    text-align: center;
+    max-height: auto; /* Define um limite de altura para a lista */
+    overflow-y: auto; /* Adiciona um scroll vertical quando o conteúdo exceder o limite */
+    margin-top: 20px; 
+    
+  }
+  
+  .historico-lista li {
+    font-size: auto;  
+    text-align: center;
+    padding: 5px; 
+    width: auto;
+    height: auto;
+   
+  }
+  
+  #btn-limpar-historico {
+    width: auto;
+    height: auto;
+
+}
+#btn-voltar{
+  
+  width: auto;
+  height: auto;
+
+}
+
+ 
+}
+
+@media screen and (max-width: 219px) {
+  .body{
+    width: auto;
+    height: auto;
+    background-repeat: no-repeat;
+
+  }
+  .historico{
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+   
+  .historico-titulo {
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .historico-lista {
+    list-style: none;
+    color: white;
+    text-align: center;
+    max-height: auto; /* Define um limite de altura para a lista */
+    overflow-y: auto; /* Adiciona um scroll vertical quando o conteúdo exceder o limite */
+    margin-top: 20px; 
+    
+  }
+  
+  .historico-lista li {
+    font-size: auto;  
+    text-align: center;
+    padding: 5px; 
+    width: auto;
+    height: auto;
+   
+  }
+  
+  #btn-limpar-historico {
+    width: auto;
+    height: auto;
+
+}
+#btn-voltar{
+  
+  width: auto;
+  height: auto;
+
+}
+
+}
+
